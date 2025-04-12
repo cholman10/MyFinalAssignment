@@ -1,0 +1,43 @@
+#factDisplay {
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  .carousel-item {
+    height: 350px;
+  }
+
+
+
+
+body.light-mode {
+    background-color: #f6f3f3fe;
+    color: #212529;
+  }
+  
+
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .form-control,
+  body.dark-mode .form-select {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border-color: #444;
+  }
+  
+  body.dark-mode .btn {
+    background-color: cornsilk;
+    color: darkblue;
+  }
+
+  body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+    color: #ddd;
+  }
+  
+  body.dark-mode .border {
+    border-color: #444 !important;
+  }
