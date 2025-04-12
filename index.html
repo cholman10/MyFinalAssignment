@@ -8,9 +8,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div>
-    <p class="h1 text-center">Fact Centre</p>
-  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand">Find Your Facts Here</a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <form class="d-flex w-100 w-md-auto mt-3 mt-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
   <div class="container mt-3">
     <div class="form-check form-switch">
       <input class="form-check-input" type="checkbox" id="themeToggle">

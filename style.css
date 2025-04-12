@@ -7,7 +7,9 @@
     height: 350px;
   }
 
-
+  body {
+    padding-top: 80px;
+  }
 
 
 body.light-mode {
@@ -41,3 +43,45 @@ body.dark-mode {
   body.dark-mode .border {
     border-color: #444 !important;
   }
+
+ /* Dark mode navbar styling */
+body.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .form-control,
+body.dark-mode .navbar .form-control::placeholder {
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar .form-control {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
+
+body.dark-mode .navbar .btn-outline-success {
+  color: #060606;
+  border-color: #0d0d0d;
+}
+
+body.dark-mode .navbar .btn-outline-success:hover {
+  background-color: #b4b4b4;
+  color: #1e1e1e;
+}
+
+body.dark-mode .navbar-toggler {
+  border-color: #f1f1f1;
+}
+body.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* Make search bar narrower on small screens */
+@media (max-width: 768px) {
+  .navbar form input[type="search"] {
+    max-width: 150px;
+  }
+}
