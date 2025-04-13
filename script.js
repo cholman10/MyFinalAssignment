@@ -19,6 +19,14 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 document.getElementById('getFactBtn').addEventListener('click', async () => {
   const display = document.getElementById('factDisplay');
   display.classList.remove('d-none');
+
+  const likeFacts = document.querySelector('input[name="likeFacts"]:checked');
+  
+  if (!likeFacts || likeFacts.value === 'no') {
+    display.textContent = "You don't like facts, you don't get one.";
+    return;
+  }
+
   display.textContent = 'Loading fact...';
 
   try {
